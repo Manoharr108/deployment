@@ -6,6 +6,7 @@ app.use("/",async(req, res)=>{
     let data = await fetch("https://jsonplaceholder.typicode.com/todos/");
     let response = await data.json();
     res.json(response)
+    console.log("helloo")
 })
 
 
