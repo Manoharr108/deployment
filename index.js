@@ -8,7 +8,9 @@ app.get("/",async(req, res)=>{
     res.json(response)
     console.log("helloo")
 })
-
+app.get("/manu",(req,res)=>{
+    res.json({message:"its working"})
+})
 
 app.listen(port,()=>{
     console.log("successfully running!!")
