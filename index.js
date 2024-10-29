@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use("/",async(req, res)=>{
+app.use("/api",async(req, res)=>{
     let data = await fetch("https://jsonplaceholder.typicode.com/todos/");
     let response = await data.json();
     res.json(response)
